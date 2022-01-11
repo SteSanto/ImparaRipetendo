@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  
+  <title>Homepage Impara Ripetendo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  <!--angular-->
+  <script src="./angular.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+  
+  <link rel="shortcut icon" href="img/logo.png"/> <!--Inserimento icona per le schede browser-->
+  <link rel="stylesheet" href="stile.css">
+  <script src="./script.js"></script>
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!--NAVBAR-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+     
+
+     
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+      
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+    
+      <a id="homelink" href="index.html" title="Homepage"><img id="loghino"src="img/home3.png"></img></a>
+      
+        
+      
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="corsi.html">I CORSI</a></li>
+        <li><a href="tariffe.html">TARIFFE</a></li>
+        <li><a href="entraconnoi.html">ENTRA CON NOI</a></li>
+        <li><a href="contatti.html">CHI SIAMO</a></li>
+        <li><a id="login"  href="login.html">LOGIN</a></li>
+      </ul>
+    
+    
+    </div>
+  </div>
+</nav>
+<!--Sezione Logo e ora-->
+<div class="jumbotron text-center container-fluid" ng-app="myApp2" ng-controller="myCtrl2">
+<span>{{day + " " + daynum + " " + month + " " + year + "&nbsp &nbsp" + ora}}</span> 
+    <div id="contLogo"class="col-sm-4 logo">
+      <img  id="logo1" src="img/logo.png"> 
+    </div>
+    
+   
+    
+
+  <div id="titolo" class="col-sm-8">
+  <h1>Impara</h1> 
+  <h1>Ripetendo</h1> 
+  
+  
+  
+  </div>
+  
+</div>
+  
+
+
+<!-- Container slogan e info sito -->
+
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      
+      <img id="horn"src="img/horn.png">
+    </div>
+    <div class="col-sm-8">
+      <h2>PERCHÈ IMPARA RIPETENDO?</h2><br>
+      <h4> Impara ripetendo nasce con l’intento di poter aiutare e supportare gli studenti del corso di ICT nel loro percorso di studi, offrendo la possibilità di seguire approfondimenti in via telematica o in presenza con il nostro team composto da studenti neo-laureati.</h4><br>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Container CORSI più richiesti -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h4>I NOSTRI CORSI PIÙ RICHIESTI</h4><br>
+  <div class="row text-center slideanim">
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img  src="img/html.jpeg">
+        <p><strong>Introduzione all'informatica e alle reti</strong></p>
+        <p>Informatica, I anno</p>
+      </div>
+    </div>
+    
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/php.png">
+        <p><strong>Sviluppo software di applicazioni informatiche </strong></p>
+        <p>Informatica, I anno</p>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="img/java.png">
+        <p><strong>Introduzione al future internet</strong></p>
+        <p>Informatica, III anno</p>
+      </div>
+    </div>
+  </div><br><br>
+<!--CAROSELLO-->
+  <h2>COSA DICONO DI NOI</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- indici -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Grazie ad Impara Ripetendo sono riuscito a recuperare tutti gli esami che non riuscivo a sostenere."<br><br><span>Francesco, ICT</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Impara Ripetendo mi ha permesso di alzare la  media dei voti."<br><br><span>Chiara, ICT</span></h4>
+      </div>
+      <div class="item">
+        <h4>"È più di una semplice organizzazione, è una famiglia."<br><br><span>Giovanni, ICT</span></h4>
+      </div>
+    </div>
+
+    <!-- controlli carosello -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<br>
+
+
+
+
+
+
+<!--Inserimento footer-->
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="Vai in cima">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+
+  <div>Sito realizzato da: Stefano Santomauro & Emanuela Cristino <br>
+  <a id="foot" href="contatti.html" title="contattaci">contattaci</a></div>
+  <hr>
+  <div>2021 - All Right Reserved - ICT innovazione sociale, comunicazione e nuove tecnologie </div>
+  <div>Corso di Design di Applicazioni Web</div>
+</footer>
+
+
+
+</body>
+</html>
